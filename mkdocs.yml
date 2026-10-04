@@ -1,0 +1,113 @@
+site_name: Django Mastery Path
+site_description: A structured Django course from first view to production — models and the ORM, templates, forms, auth, Django REST Framework, testing, caching, async, security and deployment — with every example run on a real project.
+site_url: https://sigilipelli.github.io/django-mastery-path/
+repo_url: https://github.com/sigilipelli/django-mastery-path
+repo_name: django-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Entry":
+      - Overview: level-1/index.md
+      - "01 · What Django Is: The Request/Response Cycle": level-1/01-what-django-is.md
+      - "02 · Installing Django & Your First Project": level-1/02-project-setup.md
+      - "03 · URLs and Views": level-1/03-urls-views.md
+      - "04 · Templates: Inheritance, Tags, Filters & Autoescaping": level-1/04-templates.md
+      - "05 · Models and Migrations": level-1/05-models-migrations.md
+      - "06 · Querying with the ORM": level-1/06-orm-basics.md
+      - "07 · The Django Admin": level-1/07-admin.md
+      - "08 · Forms, ModelForms & CSRF": level-1/08-forms.md
+      - "09 · Static Files & User Uploads": level-1/09-static-media.md
+      - "10 · Project — A Reading-List App": level-1/10-project-reading-list.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Model Relationships: ForeignKey, ManyToMany & OneToOne": level-2/01-relationships.md
+      - "02 · Advanced QuerySets: Q, F, annotate & aggregate": level-2/02-advanced-querysets.md
+      - "03 · Finding and Fixing N+1 Queries": level-2/03-n-plus-one.md
+      - "04 · Class-Based & Generic Views": level-2/04-class-based-views.md
+      - "05 · Authentication: Login, Logout & Sign-up": level-2/05-authentication.md
+      - "06 · Permissions, Groups & Object-Level Access": level-2/06-permissions.md
+      - "07 · The Custom User Model": level-2/07-custom-user-model.md
+      - "08 · Sessions, Messages & Middleware": level-2/08-sessions-middleware.md
+      - "09 · Testing Django Apps": level-2/09-testing.md
+      - "10 · Project — A Multi-User Task Board": level-2/10-project-task-board.md
+  - "Level 3 · Advanced":
+      - Overview: level-3/index.md
+      - "01 · Django REST Framework: Serializers": level-3/01-drf-serializers.md
+      - "02 · DRF Views, ViewSets & Routers": level-3/02-drf-viewsets.md
+      - "03 · API Auth, Permissions, Throttling & Pagination": level-3/03-drf-auth-permissions.md
+      - "04 · Signals — and When Not to Use Them": level-3/04-signals.md
+      - "05 · Transactions, Constraints & Race Conditions": level-3/05-transactions-integrity.md
+      - "06 · Migrations in Depth: Data Migrations & Zero-Downtime Changes": level-3/06-migrations-in-depth.md
+      - "07 · Caching": level-3/07-caching.md
+      - "08 · Background Work: The Tasks Framework & Celery": level-3/08-background-tasks.md
+      - "09 · Async Django: ASGI, Async Views & the Async ORM": level-3/09-async-django.md
+      - "10 · Project — A REST API for the Task Board": level-3/10-project-rest-api.md
+  - "Level 4 · Master":
+      - Overview: level-4/index.md
+      - "01 · Security: What Django Protects and What It Can't": level-4/01-security.md
+      - "02 · Production Settings & Configuration": level-4/02-production-settings.md
+      - "03 · Deploying Django: Gunicorn, Uvicorn, Static Files & PostgreSQL": level-4/03-deployment.md
+      - "04 · Database Performance: Indexes, EXPLAIN & Query Budgets": level-4/04-database-performance.md
+      - "05 · Custom Management Commands": level-4/05-management-commands.md
+      - "06 · Custom Template Tags, Filters & Template Partials": level-4/06-template-tags-partials.md
+      - "07 · Logging, Error Reporting & Health Checks": level-4/07-logging-errors.md
+      - "08 · Time Zones & Internationalization": level-4/08-i18n-timezones.md
+      - "09 · Upgrading Django & Handling Deprecations": level-4/09-upgrading.md
+      - "10 · Capstone — A Production-Ready Book Club App": level-4/10-capstone.md
