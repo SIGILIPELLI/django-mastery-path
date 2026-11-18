@@ -40,7 +40,7 @@ Level 2 made an application multi-user. Level 3 is about what happens when it's 
   annotations, and testing.
 - **HTTP and JSON basics** for the DRF lessons. For REST design itself (resource naming,
   status codes, versioning) see the
-  [REST API Mastery Path](https://sigilipelli.github.io/rest-api-mastery-path/).
+  [REST API Mastery Path](https://learnmasterypath.com/rest-api-mastery-path/).
 - **Python's `asyncio` basics** (`async def`, `await`, `asyncio.gather`) for lesson 09.
 - **Optional:** a local PostgreSQL to reproduce lessons 05 and 06 exactly.
 

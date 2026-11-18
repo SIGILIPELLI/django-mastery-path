@@ -182,9 +182,9 @@ Something must start Gunicorn on boot and restart it if it dies: systemd on a VM
 container runtime, or the platform. In a container, the usual pattern is one process type
 per container (web, worker, scheduled jobs) built from one image, configured entirely by
 environment variables, which is exactly what lesson 02 set up. For containers in depth see
-the [Docker Mastery Path](https://sigilipelli.github.io/docker-mastery-path/); for
+the [Docker Mastery Path](https://learnmasterypath.com/docker-mastery-path/); for
 orchestrating them, the
-[Kubernetes Mastery Path](https://sigilipelli.github.io/kubernetes-mastery-path/).
+[Kubernetes Mastery Path](https://learnmasterypath.com/kubernetes-mastery-path/).
 
 ## How It Actually Works
 

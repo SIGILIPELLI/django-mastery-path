@@ -36,8 +36,8 @@ features:
 
 - **Levels 1–3**, especially testing, transactions and the task-board projects.
 - **Basic command-line and server knowledge**: environment variables, processes, ports,
-  HTTP headers. The [Shell/Bash Mastery Path](https://sigilipelli.github.io/shell-mastery-path/)
-  and [Server Ops Mastery Path](https://sigilipelli.github.io/server-ops-mastery-path/)
+  HTTP headers. The [Shell/Bash Mastery Path](https://learnmasterypath.com/shell-mastery-path/)
+  and [Server Ops Mastery Path](https://learnmasterypath.com/server-ops-mastery-path/)
   cover the operating-system side.
 - **PostgreSQL** for lessons 03 and 04 if you want to reproduce the plans exactly. Any
   local installation works; we used a server started by the `pgserver` Python package.

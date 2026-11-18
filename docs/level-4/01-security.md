@@ -12,7 +12,7 @@ lesson demonstrates each protection on Django 6.1.1, shows the escape hatch that
 it, and ends with the deployment checklist.
 
 For broader security concepts (threat modelling, OWASP categories, incident response),
-see the [Cybersecurity Mastery Path](https://sigilipelli.github.io/cybersecurity-mastery-path/).
+see the [Cybersecurity Mastery Path](https://learnmasterypath.com/cybersecurity-mastery-path/).
 
 ## SQL injection
 

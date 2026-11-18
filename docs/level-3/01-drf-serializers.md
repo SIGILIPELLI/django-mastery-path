@@ -10,7 +10,7 @@ REST Framework** (DRF) is the long-established third-party package that fills th
 serializers, API views, authentication, permissions, throttling, pagination and a
 browsable API. Level 3 uses it for four lessons. For general REST design (resource
 naming, status codes, versioning), see the
-[REST API Mastery Path](https://sigilipelli.github.io/rest-api-mastery-path/); this course
+[REST API Mastery Path](https://learnmasterypath.com/rest-api-mastery-path/); this course
 stays on the Django side.
 
 A **serializer** is DRF's equivalent of a Django form, pointed the other way as well:

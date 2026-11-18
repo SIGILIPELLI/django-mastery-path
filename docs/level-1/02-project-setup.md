@@ -12,7 +12,7 @@ a small book catalogue called **shelf**.
 
 - **Python 3.12 or newer.** Django 6.x declares `Requires-Python: >=3.12`. Check with
   `python3 --version`. If you need a refresher on Python itself, see
-  [Python Mastery Path](https://sigilipelli.github.io/python-mastery-path/).
+  [Python Mastery Path](https://learnmasterypath.com/python-mastery-path/).
 - A terminal and an editor. Nothing else: the default database is SQLite, which ships
   with Python.
 

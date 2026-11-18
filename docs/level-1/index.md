@@ -35,12 +35,12 @@ Three ideas carry you through all ten modules:
 
 - **Python fundamentals:** functions, classes, modules, virtual environments, `pip`.
   Django is plain Python, and every error message assumes you can read a traceback. If
-  that's shaky, start with [Python Mastery Path](https://sigilipelli.github.io/python-mastery-path/).
+  that's shaky, start with [Python Mastery Path](https://learnmasterypath.com/python-mastery-path/).
 - **Basic HTML:** forms, links, the difference between GET and POST. The
-  [HTML & CSS Mastery Path](https://sigilipelli.github.io/html-css-mastery-path/) covers
+  [HTML & CSS Mastery Path](https://learnmasterypath.com/html-css-mastery-path/) covers
   this.
 - **A little SQL helps** for reading the queries the ORM generates; see
-  [SQL Mastery Path](https://sigilipelli.github.io/sql-mastery-path/).
+  [SQL Mastery Path](https://learnmasterypath.com/sql-mastery-path/).
 - Python 3.12 or newer. SQLite is built in, so no database server is needed for Level 1.
 
 ## How the examples were checked

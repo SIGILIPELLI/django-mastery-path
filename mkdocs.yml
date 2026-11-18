@@ -1,6 +1,6 @@
 site_name: Django Mastery Path
 site_description: A structured Django course from first view to production — models and the ORM, templates, forms, auth, Django REST Framework, testing, caching, async, security and deployment — with every example run on a real project.
-site_url: https://sigilipelli.github.io/django-mastery-path/
+site_url: https://learnmasterypath.com/django-mastery-path/
 repo_url: https://github.com/sigilipelli/django-mastery-path
 repo_name: django-mastery-path
 

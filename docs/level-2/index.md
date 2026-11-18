@@ -38,7 +38,7 @@ separate a demo from a product:
 - **Level 1 of this course**, or equivalent experience: models, migrations, the ORM
   basics, function views, templates and ModelForms.
 - **Comfort reading SQL.** Several lessons judge code by the SQL it produces. The
-  [SQL Mastery Path](https://sigilipelli.github.io/sql-mastery-path/) covers joins,
+  [SQL Mastery Path](https://learnmasterypath.com/sql-mastery-path/) covers joins,
   grouping and subqueries.
 - **Python classes and inheritance** for lesson 04 (the method resolution order matters).
 
