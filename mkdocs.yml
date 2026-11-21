@@ -57,9 +57,11 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/progress-tracker.css
+  - stylesheets/final-quiz.css
 
 extra_javascript:
   - javascripts/progress-tracker.js
+  - javascripts/final-quiz.js
 
 
 
@@ -131,3 +133,5 @@ nav:
       - "08 · Time Zones & Internationalization": level-4/08-i18n-timezones.md
       - "09 · Upgrading Django & Handling Deprecations": level-4/09-upgrading.md
       - "10 · Capstone — A Production-Ready Book Club App": level-4/10-capstone.md
+  - "🎯 Final Quiz": quiz.md
+
