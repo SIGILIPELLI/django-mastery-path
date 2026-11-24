@@ -1,6 +1,6 @@
 ---
 title: "Free Django Course: Models, ORM, Auth, Django REST Framework, Testing & Deployment"
-description: "Free Django course: 35 lessons, 4 projects and 1 capstone on the ORM, templates, forms, auth, Django REST Framework, testing, caching, async, security and deployment."
+description: "Free Django course: 36 lessons, 3 projects and 1 capstone on the ORM, templates, forms, auth, Django REST Framework, testing, caching, async, security and deployment."
 ---
 
 # Django Mastery Path
@@ -47,7 +47,7 @@ doesn't get saved.
 
 | Level | Focus | Modules |
 |-------|-------|---------|
-| [Level 1 · Entry](level-1/index.md) | The request/response cycle, project setup, URLs and views, templates, models and migrations, the ORM, the admin, forms and CSRF, static files and uploads | 8 topics + 2 projects (a reading-list app) |
+| [Level 1 · Entry](level-1/index.md) | The request/response cycle, project setup, URLs and views, templates, models and migrations, the ORM, the admin, forms and CSRF, static files and uploads | 9 topics + 1 project (a reading-list app) |
 | [Level 2 · Intermediate](level-2/index.md) | Relationships, advanced QuerySets, N+1 queries, class-based views, authentication, permissions, custom user model, sessions and middleware, testing | 9 topics + 1 project (a multi-user task board) |
 | [Level 3 · Advanced](level-3/index.md) | DRF serializers, viewsets and permissions, signals, transactions and constraints, migrations in depth, caching, background tasks, async Django | 9 topics + 1 project (a REST API) |
 | [Level 4 · Master](level-4/index.md) | Security, production settings, deployment, database performance, management commands, template tags and partials, logging, i18n and time zones, upgrading | 9 topics + 1 capstone (a production-ready book-club app) |
