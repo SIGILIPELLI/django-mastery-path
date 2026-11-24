@@ -1,0 +1,4079 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A free Django cheat sheet: 24 quick-reference tables from every level of the Django Mastery Path, each linked to its full lesson.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/django-mastery-path/cheat-sheet/">
+      
+      
+        <link rel="prev" href="../interview-questions/">
+      
+      
+        <link rel="next" href="../level-1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>Django Cheat Sheet: Quick Reference, Beginner to Advanced</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Django Cheat Sheet: Quick Reference, Beginner to Advanced">
+  <meta property="og:description" content="A free Django cheat sheet: 24 quick-reference tables from every level of the Django Mastery Path, each linked to its full lesson.">
+  <meta property="og:url" content="https://learnmasterypath.com/django-mastery-path/cheat-sheet/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Django Cheat Sheet: Quick Reference, Beginner to Advanced">
+  <meta name="twitter:description" content="A free Django cheat sheet: 24 quick-reference tables from every level of the Django Mastery Path, each linked to its full lesson.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Django Mastery Path", "item": "https://learnmasterypath.com/django-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Cheat Sheet", "item": "https://learnmasterypath.com/django-mastery-path/cheat-sheet/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "django-mastery-path", "name": "Django Mastery Path", "repo": "https://github.com/sigilipelli/django-mastery-path", "src": "cheat-sheet.md", "url": "https://learnmasterypath.com/django-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#django-cheat-sheet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Django Mastery Path" class="md-header__button md-logo" aria-label="Django Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Django Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Django Cheat Sheet: Quick Reference, Beginner to Advanced
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/django-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    django-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../interview-questions/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cheat Sheet
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Entry
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Intermediate
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Advanced
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Master
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Django Mastery Path" class="md-nav__button md-logo" aria-label="Django Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    Django Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/django-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    django-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interview-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-django-is-the-requestresponse-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Django Is: The Request/Response Cycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-installing-django-your-first-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Installing Django &amp; Your First Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-urls-and-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · URLs and Views
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-templates-inheritance-tags-filters-autoescaping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Templates: Inheritance, Tags, Filters &amp; Autoescaping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-models-and-migrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Models and Migrations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-querying-with-the-orm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Querying with the ORM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-the-django-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · The Django Admin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-reading-list-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Reading-List App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-model-relationships-foreignkey-manytomany-onetoone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Model Relationships: ForeignKey, ManyToMany &amp; OneToOne
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-class-based-generic-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Class-Based &amp; Generic Views
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-authentication-login-logout-sign-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Authentication: Login, Logout &amp; Sign-up
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-the-custom-user-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · The Custom User Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-sessions-messages-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Sessions, Messages &amp; Middleware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-testing-django-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Testing Django Apps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-django-rest-framework-serializers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Django REST Framework: Serializers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-drf-views-viewsets-routers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · DRF Views, ViewSets &amp; Routers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-api-auth-permissions-throttling-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · API Auth, Permissions, Throttling &amp; Pagination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-signals-and-when-not-to-use-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Signals — and When Not to Use Them
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-background-work-the-tasks-framework-celery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Background Work: The Tasks Framework &amp; Celery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-rest-api-for-the-task-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A REST API for the Task Board
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#02-production-settings-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Production Settings &amp; Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-logging-error-reporting-health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Logging, Error Reporting &amp; Health Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-production-ready-book-club-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Production-Ready Book Club App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Entry
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Entry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-what-django-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What Django Is: The Request/Response Cycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-project-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Installing Django & Your First Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-urls-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · URLs and Views
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Templates: Inheritance, Tags, Filters & Autoescaping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-models-migrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Models and Migrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-orm-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Querying with the ORM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · The Django Admin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Forms, ModelForms & CSRF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-static-media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Static Files & User Uploads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-reading-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Reading-List App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Intermediate
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Intermediate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-relationships/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Model Relationships: ForeignKey, ManyToMany & OneToOne
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-advanced-querysets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Advanced QuerySets: Q, F, annotate & aggregate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-n-plus-one/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Finding and Fixing N+1 Queries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-class-based-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Class-Based & Generic Views
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Authentication: Login, Logout & Sign-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Permissions, Groups & Object-Level Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-custom-user-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · The Custom User Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-sessions-middleware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Sessions, Messages & Middleware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Testing Django Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-task-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Multi-User Task Board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Advanced
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-drf-serializers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Django REST Framework: Serializers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-drf-viewsets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · DRF Views, ViewSets & Routers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-drf-auth-permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · API Auth, Permissions, Throttling & Pagination
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Signals — and When Not to Use Them
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-transactions-integrity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Transactions, Constraints & Race Conditions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-migrations-in-depth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Migrations in Depth: Data Migrations & Zero-Downtime Changes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-caching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Caching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-background-tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Background Work: The Tasks Framework & Celery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-async-django/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Async Django: ASGI, Async Views & the Async ORM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-rest-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A REST API for the Task Board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Master
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Master
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Security: What Django Protects and What It Can't
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-production-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Production Settings & Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Deploying Django: Gunicorn, Uvicorn, Static Files & PostgreSQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-database-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Database Performance: Indexes, EXPLAIN & Query Budgets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-management-commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Custom Management Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-template-tags-partials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Custom Template Tags, Filters & Template Partials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-logging-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Logging, Error Reporting & Health Checks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-i18n-timezones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Time Zones & Internationalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-upgrading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Upgrading Django & Handling Deprecations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — A Production-Ready Book Club App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-django-is-the-requestresponse-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Django Is: The Request/Response Cycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-installing-django-your-first-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Installing Django &amp; Your First Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-urls-and-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · URLs and Views
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-templates-inheritance-tags-filters-autoescaping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Templates: Inheritance, Tags, Filters &amp; Autoescaping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-models-and-migrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Models and Migrations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-querying-with-the-orm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Querying with the ORM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-the-django-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · The Django Admin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-reading-list-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Reading-List App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-model-relationships-foreignkey-manytomany-onetoone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Model Relationships: ForeignKey, ManyToMany &amp; OneToOne
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-class-based-generic-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Class-Based &amp; Generic Views
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-authentication-login-logout-sign-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Authentication: Login, Logout &amp; Sign-up
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-the-custom-user-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · The Custom User Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-sessions-messages-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Sessions, Messages &amp; Middleware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-testing-django-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Testing Django Apps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-django-rest-framework-serializers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Django REST Framework: Serializers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-drf-views-viewsets-routers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · DRF Views, ViewSets &amp; Routers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-api-auth-permissions-throttling-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · API Auth, Permissions, Throttling &amp; Pagination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-signals-and-when-not-to-use-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Signals — and When Not to Use Them
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-background-work-the-tasks-framework-celery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Background Work: The Tasks Framework &amp; Celery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-rest-api-for-the-task-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A REST API for the Task Board
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#02-production-settings-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Production Settings &amp; Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-logging-error-reporting-health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Logging, Error Reporting &amp; Health Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-production-ready-book-club-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Production-Ready Book Club App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="django-cheat-sheet">Django Cheat Sheet<a class="headerlink" href="#django-cheat-sheet" title="Permanent link">&para;</a></h1>
+<p>Quick-reference tables from <strong>24 lessons</strong> of the free Django Mastery Path, in course order from beginner to advanced. Each section links to the full lesson with explanations and runnable examples.</p>
+<h2 id="level-1-entry">Level 1 · Entry<a class="headerlink" href="#level-1-entry" title="Permanent link">&para;</a></h2>
+<h3 id="01-what-django-is-the-requestresponse-cycle"><a href="../level-1/01-what-django-is/">01 · What Django Is: The Request/Response Cycle</a><a class="headerlink" href="#01-what-django-is-the-requestresponse-cycle" title="Permanent link">&para;</a></h3>
+<p><em>The parts you get</em></p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>What it does</th>
+<th>Where you'll meet it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>URL dispatcher</td>
+<td>Maps a path like <code>/books/3/</code> to a Python function</td>
+<td>Lesson 03</td>
+</tr>
+<tr>
+<td>Views</td>
+<td>Functions or classes that take a request and return a response</td>
+<td>Lesson 03, Level 2 · 04</td>
+</tr>
+<tr>
+<td>Template engine</td>
+<td>Renders HTML with inheritance and auto-escaping</td>
+<td>Lesson 04</td>
+</tr>
+<tr>
+<td>ORM + migrations</td>
+<td>Python classes for tables; generated, versioned schema changes</td>
+<td>Lessons 05–06</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>A full CRUD back office generated from your models</td>
+<td>Lesson 07</td>
+</tr>
+<tr>
+<td>Forms</td>
+<td>Parse, validate and re-display user input</td>
+<td>Lesson 08</td>
+</tr>
+<tr>
+<td>Auth</td>
+<td>Users, password hashing, login, permissions, groups</td>
+<td>Level 2 · 05–07</td>
+</tr>
+<tr>
+<td>Middleware</td>
+<td>Hooks that wrap every request (sessions, CSRF, security headers)</td>
+<td>Level 2 · 08</td>
+</tr>
+</tbody>
+</table>
+<h3 id="02-installing-django-your-first-project"><a href="../level-1/02-project-setup/">02 · Installing Django &amp; Your First Project</a><a class="headerlink" href="#02-installing-django-your-first-project" title="Permanent link">&para;</a></h3>
+<p><em>The commands you'll use most</em></p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>runserver</code></td>
+<td>Development server with auto-reload</td>
+</tr>
+<tr>
+<td><code>startapp NAME</code></td>
+<td>Create an app skeleton</td>
+</tr>
+<tr>
+<td><code>makemigrations</code></td>
+<td>Generate migration files from model changes</td>
+</tr>
+<tr>
+<td><code>migrate</code></td>
+<td>Apply migrations to the database</td>
+</tr>
+<tr>
+<td><code>shell</code></td>
+<td>Python REPL with Django configured</td>
+</tr>
+<tr>
+<td><code>createsuperuser</code></td>
+<td>Create an admin user</td>
+</tr>
+<tr>
+<td><code>check</code></td>
+<td>Run the system checks (config errors, admin errors, deploy checks)</td>
+</tr>
+<tr>
+<td><code>test</code></td>
+<td>Run the test suite</td>
+</tr>
+</tbody>
+</table>
+<h3 id="03-urls-and-views"><a href="../level-1/03-urls-views/">03 · URLs and Views</a><a class="headerlink" href="#03-urls-and-views" title="Permanent link">&para;</a></h3>
+<p><em>Capturing values with path converters</em></p>
+<table>
+<thead>
+<tr>
+<th>Converter</th>
+<th>Matches</th>
+<th>Python type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>str</code> (default)</td>
+<td>anything except <code>/</code></td>
+<td><code>str</code></td>
+</tr>
+<tr>
+<td><code>int</code></td>
+<td><code>0</code> or a positive integer</td>
+<td><code>int</code></td>
+</tr>
+<tr>
+<td><code>slug</code></td>
+<td>letters, digits, hyphens, underscores</td>
+<td><code>str</code></td>
+</tr>
+<tr>
+<td><code>uuid</code></td>
+<td>a formatted UUID</td>
+<td><code>uuid.UUID</code></td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td>anything, including <code>/</code></td>
+<td><code>str</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="04-templates-inheritance-tags-filters-autoescaping"><a href="../level-1/04-templates/">04 · Templates: Inheritance, Tags, Filters &amp; Autoescaping</a><a class="headerlink" href="#04-templates-inheritance-tags-filters-autoescaping" title="Permanent link">&para;</a></h3>
+<p><em>Tags and filters you'll use daily</em></p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{% if %} {% elif %} {% else %}</code></td>
+<td>branching; supports <code>and</code>, <code>or</code>, <code>not</code>, <code>in</code>, comparisons</td>
+</tr>
+<tr>
+<td><code>{% for x in items %} ... {% empty %}</code></td>
+<td>loops; <code>forloop.counter</code>, <code>forloop.first</code>, <code>forloop.last</code></td>
+</tr>
+<tr>
+<td><code>{% url 'name' arg %}</code></td>
+<td>reverse a URL</td>
+</tr>
+<tr>
+<td><code>{% csrf_token %}</code></td>
+<td>hidden CSRF field in POST forms (lesson 08)</td>
+</tr>
+<tr>
+<td><code>{% with total=items|length %}</code></td>
+<td>name an intermediate value</td>
+</tr>
+<tr>
+<td><code>{% load static %}</code> then <code>{% static 'path' %}</code></td>
+<td>static file URLs (lesson 09)</td>
+</tr>
+<tr>
+<td><code>{% comment %}</code> / <code>{# ... #}</code></td>
+<td>comments that never reach the browser</td>
+</tr>
+</tbody>
+</table>
+<h3 id="05-models-and-migrations"><a href="../level-1/05-models-migrations/">05 · Models and Migrations</a><a class="headerlink" href="#05-models-and-migrations" title="Permanent link">&para;</a></h3>
+<p><em>Choosing field types</em></p>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Field</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Short text</td>
+<td><code>CharField(max_length=...)</code></td>
+<td><code>max_length</code> is required</td>
+</tr>
+<tr>
+<td>Long text</td>
+<td><code>TextField()</code></td>
+<td>no length limit in the database</td>
+</tr>
+<tr>
+<td>Whole numbers</td>
+<td><code>IntegerField</code>, <code>PositiveIntegerField</code>, <code>BigIntegerField</code></td>
+<td>positive fields add a <code>CHECK (&gt;= 0)</code></td>
+</tr>
+<tr>
+<td>Money</td>
+<td><code>DecimalField(max_digits, decimal_places)</code></td>
+<td>never <code>FloatField</code> for money</td>
+</tr>
+<tr>
+<td>Dates/times</td>
+<td><code>DateField</code>, <code>DateTimeField</code></td>
+<td><code>auto_now_add</code> sets on create, <code>auto_now</code> on every save</td>
+</tr>
+<tr>
+<td>True/false</td>
+<td><code>BooleanField(default=False)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Fixed set of values</td>
+<td><code>CharField(choices=...)</code> with <code>TextChoices</code></td>
+<td><code>get_status_display()</code> returns the label</td>
+</tr>
+<tr>
+<td>Email / URL</td>
+<td><code>EmailField</code>, <code>URLField</code></td>
+<td><code>CharField</code> plus form validation</td>
+</tr>
+<tr>
+<td>Structured data</td>
+<td><code>JSONField</code></td>
+<td>supported on all built-in backends</td>
+</tr>
+<tr>
+<td>Files</td>
+<td><code>FileField</code>, <code>ImageField</code></td>
+<td>lesson 09</td>
+</tr>
+</tbody>
+</table>
+<h3 id="06-querying-with-the-orm"><a href="../level-1/06-orm-basics/">06 · Querying with the ORM</a><a class="headerlink" href="#06-querying-with-the-orm" title="Permanent link">&para;</a></h3>
+<p><em>Managers and QuerySets</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Returns</th>
+<th>SQL idea</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>all()</code></td>
+<td>QuerySet</td>
+<td><code>SELECT *</code></td>
+</tr>
+<tr>
+<td><code>filter(**lookups)</code></td>
+<td>QuerySet</td>
+<td><code>WHERE ...</code></td>
+</tr>
+<tr>
+<td><code>exclude(**lookups)</code></td>
+<td>QuerySet</td>
+<td><code>WHERE NOT (...)</code></td>
+</tr>
+<tr>
+<td><code>order_by("-pages")</code></td>
+<td>QuerySet</td>
+<td><code>ORDER BY pages DESC</code></td>
+</tr>
+<tr>
+<td><code>values("title")</code> / <code>values_list("title", flat=True)</code></td>
+<td>QuerySet of dicts / tuples / values</td>
+<td>select specific columns</td>
+</tr>
+<tr>
+<td><code>get(**lookups)</code></td>
+<td>one object</td>
+<td>exactly one row or an exception</td>
+</tr>
+<tr>
+<td><code>first()</code> / <code>last()</code></td>
+<td>object or <code>None</code></td>
+<td><code>LIMIT 1</code></td>
+</tr>
+<tr>
+<td><code>count()</code></td>
+<td>int</td>
+<td><code>SELECT COUNT(*)</code></td>
+</tr>
+<tr>
+<td><code>exists()</code></td>
+<td>bool</td>
+<td><code>SELECT 1 ... LIMIT 1</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="07-the-django-admin"><a href="../level-1/07-admin/">07 · The Django Admin</a><a class="headerlink" href="#07-the-django-admin" title="Permanent link">&para;</a></h3>
+<p><em>Configuring a <code>ModelAdmin</code></em></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>list_display</code></td>
+<td>columns on the change list (fields, methods, or callables)</td>
+</tr>
+<tr>
+<td><code>list_filter</code></td>
+<td>the filter sidebar; works on choices, booleans, dates and relations</td>
+</tr>
+<tr>
+<td><code>search_fields</code></td>
+<td>the search box; <code>author__name</code> searches across the join</td>
+</tr>
+<tr>
+<td><code>list_select_related</code></td>
+<td>controls which relations are joined into the list query</td>
+</tr>
+<tr>
+<td><code>autocomplete_fields</code></td>
+<td>replaces a <code>&lt;select&gt;</code> of every author with an AJAX search box</td>
+</tr>
+<tr>
+<td><code>filter_horizontal</code></td>
+<td>a two-pane picker for many-to-many fields</td>
+</tr>
+<tr>
+<td><code>inlines</code></td>
+<td>edit related rows (reviews) on the parent's page</td>
+</tr>
+<tr>
+<td><code>actions</code></td>
+<td>bulk operations on selected rows</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-project-a-reading-list-app"><a href="../level-1/10-project-reading-list/">10 · Project — A Reading-List App</a><a class="headerlink" href="#10-project-a-reading-list-app" title="Permanent link">&para;</a></h3>
+<p><em>What we observed</em></p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /</code> on an empty database</td>
+<td>200, shows "Add your first book"</td>
+</tr>
+<tr>
+<td>POST a <em>reading</em> book with rating 4</td>
+<td>200, form re-shown: "Only finished books can be rated."</td>
+</tr>
+<tr>
+<td>POST the same book without a rating</td>
+<td>302 → <code>/1/</code></td>
+</tr>
+<tr>
+<td><code>GET /1/finish/</code></td>
+<td><strong>405</strong> (the view is POST-only)</td>
+</tr>
+<tr>
+<td><code>POST /1/finish/</code></td>
+<td>302; status became <code>done</code>, <code>finished_on</code> set</td>
+</tr>
+<tr>
+<td>Edit with rating 9</td>
+<td>"Rating must be between 1 and 5."</td>
+</tr>
+<tr>
+<td><code>GET /</code> after adding a second, unread book</td>
+<td>tabs read <code>Want to read (1)</code>, <code>Reading (0)</code>, <code>Finished (1)</code></td>
+</tr>
+<tr>
+<td><code>GET /?status=bogus</code></td>
+<td>200, all entries listed, no tab highlighted</td>
+</tr>
+<tr>
+<td><code>GET /2/delete/</code> then <code>POST /2/delete/</code></td>
+<td>confirmation page, then 302 → <code>/</code>; one entry left</td>
+</tr>
+<tr>
+<td><code>GET /999/</code></td>
+<td>404</td>
+</tr>
+</tbody>
+</table>
+<h2 id="level-2-intermediate">Level 2 · Intermediate<a class="headerlink" href="#level-2-intermediate" title="Permanent link">&para;</a></h2>
+<h3 id="01-model-relationships-foreignkey-manytomany-onetoone"><a href="../level-2/01-relationships/">01 · Model Relationships: ForeignKey, ManyToMany &amp; OneToOne</a><a class="headerlink" href="#01-model-relationships-foreignkey-manytomany-onetoone" title="Permanent link">&para;</a></h3>
+<p><em><code>on_delete</code> — decide what deletion means</em></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>When the author is deleted...</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CASCADE</code></td>
+<td>their books are deleted too</td>
+<td>parts that can't exist alone (a review without its book)</td>
+</tr>
+<tr>
+<td><code>PROTECT</code></td>
+<td>deletion raises <code>ProtectedError</code></td>
+<td>important records that must be dealt with first</td>
+</tr>
+<tr>
+<td><code>RESTRICT</code></td>
+<td>like <code>PROTECT</code>, but allows deletion if the object is also being deleted via another <code>CASCADE</code> path</td>
+<td>complex graphs</td>
+</tr>
+<tr>
+<td><code>SET_NULL</code></td>
+<td><code>author</code> becomes <code>NULL</code> (needs <code>null=True</code>)</td>
+<td>optional links, keep history</td>
+</tr>
+<tr>
+<td><code>SET_DEFAULT</code> / <code>SET(...)</code></td>
+<td>set to a default or computed value</td>
+<td>reassign to a placeholder</td>
+</tr>
+<tr>
+<td><code>DO_NOTHING</code></td>
+<td>nothing in Django; the database decides</td>
+<td>only with explicit DB-level handling</td>
+</tr>
+</tbody>
+</table>
+<h3 id="04-class-based-generic-views"><a href="../level-2/04-class-based-views/">04 · Class-Based &amp; Generic Views</a><a class="headerlink" href="#04-class-based-generic-views" title="Permanent link">&para;</a></h3>
+<p><em>The core generic views</em></p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Does</th>
+<th>Default template</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ListView</code></td>
+<td>list a QuerySet, optional pagination</td>
+<td><code>&lt;app&gt;/&lt;model&gt;_list.html</code></td>
+<td><code>object_list</code>, <code>&lt;model&gt;_list</code>, <code>page_obj</code>, <code>paginator</code>, <code>is_paginated</code></td>
+</tr>
+<tr>
+<td><code>DetailView</code></td>
+<td>one object by <code>pk</code> or <code>slug</code></td>
+<td><code>&lt;app&gt;/&lt;model&gt;_detail.html</code></td>
+<td><code>object</code>, <code>&lt;model&gt;</code></td>
+</tr>
+<tr>
+<td><code>CreateView</code></td>
+<td>ModelForm; save; redirect</td>
+<td><code>&lt;app&gt;/&lt;model&gt;_form.html</code></td>
+<td><code>form</code></td>
+</tr>
+<tr>
+<td><code>UpdateView</code></td>
+<td>ModelForm bound to an object</td>
+<td><code>&lt;app&gt;/&lt;model&gt;_form.html</code></td>
+<td><code>form</code>, <code>object</code></td>
+</tr>
+<tr>
+<td><code>DeleteView</code></td>
+<td>confirm on GET, delete on POST</td>
+<td><code>&lt;app&gt;/&lt;model&gt;_confirm_delete.html</code></td>
+<td><code>object</code></td>
+</tr>
+<tr>
+<td><code>TemplateView</code></td>
+<td>render a template</td>
+<td><code>template_name</code> (required)</td>
+<td>URL kwargs</td>
+</tr>
+<tr>
+<td><code>RedirectView</code></td>
+<td>redirect</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>FormView</code></td>
+<td>a non-model form</td>
+<td><code>template_name</code></td>
+<td><code>form</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="05-authentication-login-logout-sign-up"><a href="../level-2/05-authentication/">05 · Authentication: Login, Logout &amp; Sign-up</a><a class="headerlink" href="#05-authentication-login-logout-sign-up" title="Permanent link">&para;</a></h3>
+<p><em>What the login view does (observed)</em></p>
+<table>
+<thead>
+<tr>
+<th>Request</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POST wrong password</td>
+<td>200, form re-rendered with "Please enter a correct username and password. Note that both fields may be case-sensitive."</td>
+</tr>
+<tr>
+<td>POST correct password, <code>next=/cbv/new/</code></td>
+<td>302 → <code>/cbv/new/</code></td>
+</tr>
+<tr>
+<td>POST correct password, <code>next=https://evil.example/</code></td>
+<td>302 → <code>/accounts/profile/</code> (the default <code>LOGIN_REDIRECT_URL</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="07-the-custom-user-model"><a href="../level-2/07-custom-user-model/">07 · The Custom User Model</a><a class="headerlink" href="#07-the-custom-user-model" title="Permanent link">&para;</a></h3>
+<p><em>Referencing the user model</em></p>
+<table>
+<thead>
+<tr>
+<th>Where</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model fields</td>
+<td><code>models.ForeignKey(settings.AUTH_USER_MODEL, ...)</code> (a string, safe at import time)</td>
+</tr>
+<tr>
+<td>Everywhere else (views, forms, tests)</td>
+<td><code>from django.contrib.auth import get_user_model; User = get_user_model()</code></td>
+</tr>
+<tr>
+<td>Built-in forms</td>
+<td><code>UserCreationForm</code> and <code>UserChangeForm</code> work with custom models that keep <code>AbstractUser</code>'s fields; subclass them and set <code>Meta.model</code> if you added required fields</td>
+</tr>
+</tbody>
+</table>
+<h3 id="08-sessions-messages-middleware"><a href="../level-2/08-sessions-middleware/">08 · Sessions, Messages &amp; Middleware</a><a class="headerlink" href="#08-sessions-messages-middleware" title="Permanent link">&para;</a></h3>
+<p><em>Where the data lives</em></p>
+<table>
+<thead>
+<tr>
+<th>Engine</th>
+<th>Stores data in</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>db</code> (default)</td>
+<td>database</td>
+<td>simple; needs periodic <code>clearsessions</code></td>
+</tr>
+<tr>
+<td><code>cache</code></td>
+<td>your cache (e.g. Redis)</td>
+<td>fast; sessions lost if the cache is flushed</td>
+</tr>
+<tr>
+<td><code>cached_db</code></td>
+<td>cache, with database fallback</td>
+<td>a good production default</td>
+</tr>
+<tr>
+<td><code>signed_cookies</code></td>
+<td>the cookie itself</td>
+<td>no server storage; data visible to the user; size-limited; can't be revoked server-side</td>
+</tr>
+<tr>
+<td><code>file</code></td>
+<td>files on disk</td>
+<td>rarely the right choice with several servers</td>
+</tr>
+</tbody>
+</table>
+<h3 id="09-testing-django-apps"><a href="../level-2/09-testing/">09 · Testing Django Apps</a><a class="headerlink" href="#09-testing-django-apps" title="Permanent link">&para;</a></h3>
+<p><em>Choosing a test class</em></p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Database</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SimpleTestCase</code></td>
+<td>blocked</td>
+<td>forms without DB lookups, utilities, templates</td>
+</tr>
+<tr>
+<td><code>TestCase</code></td>
+<td>yes; each test in a rolled-back transaction</td>
+<td>almost everything</td>
+</tr>
+<tr>
+<td><code>TransactionTestCase</code></td>
+<td>yes; tables truncated after each test (slow)</td>
+<td>code that depends on real commits: <code>on_commit</code> callbacks, <code>select_for_update</code> across connections</td>
+</tr>
+<tr>
+<td><code>LiveServerTestCase</code></td>
+<td>yes, plus a real server thread</td>
+<td>browser tests with Playwright or Selenium</td>
+</tr>
+</tbody>
+</table>
+<h2 id="level-3-advanced">Level 3 · Advanced<a class="headerlink" href="#level-3-advanced" title="Permanent link">&para;</a></h2>
+<h3 id="01-django-rest-framework-serializers"><a href="../level-3/01-drf-serializers/">01 · Django REST Framework: Serializers</a><a class="headerlink" href="#01-django-rest-framework-serializers" title="Permanent link">&para;</a></h3>
+<p><em>Representing relationships</em></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Renders as</th>
+<th>Accepts on write</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PrimaryKeyRelatedField</code> (default for FKs)</td>
+<td><code>2</code></td>
+<td>an ID</td>
+</tr>
+<tr>
+<td><code>SlugRelatedField(slug_field="name")</code></td>
+<td><code>"sci-fi"</code></td>
+<td>a name</td>
+</tr>
+<tr>
+<td><code>StringRelatedField</code></td>
+<td><code>str(obj)</code></td>
+<td>read-only</td>
+</tr>
+<tr>
+<td><code>HyperlinkedRelatedField</code></td>
+<td>a URL</td>
+<td>a URL</td>
+</tr>
+<tr>
+<td>a nested serializer</td>
+<td>a full object</td>
+<td>read-only unless you write <code>create()</code>/<code>update()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="02-drf-views-viewsets-routers"><a href="../level-3/02-drf-viewsets/">02 · DRF Views, ViewSets &amp; Routers</a><a class="headerlink" href="#02-drf-views-viewsets-routers" title="Permanent link">&para;</a></h3>
+<p><em>What the API did</em></p>
+<table>
+<thead>
+<tr>
+<th>Request</th>
+<th>Status</th>
+<th>Response (trimmed)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /api/books/</code></td>
+<td>200</td>
+<td><code>{"count": 7, "next": "http://testserver/api/books/?page=2", "previous": null, "results": [...]}</code></td>
+</tr>
+<tr>
+<td><code>GET /api/books/?search=chiang&amp;ordering=-pages</code></td>
+<td>200</td>
+<td>titles: <code>Exhalation</code>, <code>Stories of Your Life and Others</code></td>
+</tr>
+<tr>
+<td><code>GET /api/books/?page=9</code></td>
+<td>404</td>
+<td><code>{"detail": "Invalid page."}</code></td>
+</tr>
+<tr>
+<td><code>GET /api/books/3/</code></td>
+<td>200</td>
+<td>keys include <code>reviews</code> and <code>average_rating</code> (detail serializer)</td>
+</tr>
+<tr>
+<td><code>GET /api/books/stats/</code></td>
+<td>200</td>
+<td><code>{"done": 2, "reading": 1, "want": 4}</code></td>
+</tr>
+<tr>
+<td><code>POST /api/books/</code></td>
+<td>403</td>
+<td><code>{"detail": "Authentication credentials were not provided."}</code></td>
+</tr>
+<tr>
+<td>authenticated <code>POST /api/books/</code></td>
+<td>201</td>
+<td>the new book, <code>"id": 8</code></td>
+</tr>
+<tr>
+<td>authenticated <code>PATCH /api/books/8/</code> with <code>{"pages": "lots"}</code></td>
+<td>400</td>
+<td><code>{"pages": ["A valid integer is required."]}</code></td>
+</tr>
+<tr>
+<td>authenticated <code>POST /api/books/8/finish/</code></td>
+<td>200</td>
+<td><code>"status": "done"</code>, <code>"published": null</code></td>
+</tr>
+<tr>
+<td>authenticated <code>DELETE /api/books/8/</code></td>
+<td>204</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="03-api-auth-permissions-throttling-pagination"><a href="../level-3/03-drf-auth-permissions/">03 · API Auth, Permissions, Throttling &amp; Pagination</a><a class="headerlink" href="#03-api-auth-permissions-throttling-pagination" title="Permanent link">&para;</a></h3>
+<p><em>Permissions: what may they do?</em></p>
+<table>
+<thead>
+<tr>
+<th>Built-in</th>
+<th>Allows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AllowAny</code></td>
+<td>everyone (the default if you set nothing)</td>
+</tr>
+<tr>
+<td><code>IsAuthenticated</code></td>
+<td>logged-in users</td>
+</tr>
+<tr>
+<td><code>IsAuthenticatedOrReadOnly</code></td>
+<td>anyone can read; writes need login</td>
+</tr>
+<tr>
+<td><code>IsAdminUser</code></td>
+<td><code>is_staff</code> users</td>
+</tr>
+<tr>
+<td><code>DjangoModelPermissions</code></td>
+<td>Django's add/change/delete model permissions (Level 2 · 06)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="04-signals-and-when-not-to-use-them"><a href="../level-3/04-signals/">04 · Signals — and When Not to Use Them</a><a class="headerlink" href="#04-signals-and-when-not-to-use-them" title="Permanent link">&para;</a></h3>
+<p><em>The built-in signals</em></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Sent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pre_save</code> / <code>post_save</code></td>
+<td>around <code>Model.save()</code></td>
+</tr>
+<tr>
+<td><code>pre_delete</code> / <code>post_delete</code></td>
+<td>around deleting each object</td>
+</tr>
+<tr>
+<td><code>m2m_changed</code></td>
+<td>when a many-to-many relation changes (<code>add</code>, <code>remove</code>, <code>clear</code>, <code>set</code>)</td>
+</tr>
+<tr>
+<td><code>pre_migrate</code> / <code>post_migrate</code></td>
+<td>around <code>migrate</code> (auth uses this to create permissions)</td>
+</tr>
+<tr>
+<td><code>request_started</code> / <code>request_finished</code></td>
+<td>around each request</td>
+</tr>
+<tr>
+<td><code>user_logged_in</code> / <code>user_logged_out</code> / <code>user_login_failed</code></td>
+<td>in <code>django.contrib.auth</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="07-caching"><a href="../level-3/07-caching/">07 · Caching</a><a class="headerlink" href="#07-caching" title="Permanent link">&para;</a></h3>
+<p><em>Configuring a backend</em></p>
+<table>
+<thead>
+<tr>
+<th>Backend</th>
+<th>Shared between processes/servers?</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LocMemCache</code></td>
+<td><strong>no</strong>, each process has its own</td>
+<td>development, tests</td>
+</tr>
+<tr>
+<td><code>RedisCache</code> (built in since Django 4.0)</td>
+<td>yes</td>
+<td>the usual production choice</td>
+</tr>
+<tr>
+<td><code>PyMemcacheCache</code></td>
+<td>yes</td>
+<td>production; simple and fast</td>
+</tr>
+<tr>
+<td><code>DatabaseCache</code></td>
+<td>yes</td>
+<td>when you can't run a cache server; slower</td>
+</tr>
+<tr>
+<td><code>FileBasedCache</code></td>
+<td>per machine</td>
+<td>rarely</td>
+</tr>
+<tr>
+<td><code>DummyCache</code></td>
+<td>—</td>
+<td>disables caching (useful in tests)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="08-background-work-the-tasks-framework-celery"><a href="../level-3/08-background-tasks/">08 · Background Work: The Tasks Framework &amp; Celery</a><a class="headerlink" href="#08-background-work-the-tasks-framework-celery" title="Permanent link">&para;</a></h3>
+<p><em>Celery</em></p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Reasonable choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New project, simple "do this later" jobs</td>
+<td>the built-in tasks API with a production backend package</td>
+</tr>
+<tr>
+<td>Existing Celery deployment</td>
+<td>keep Celery</td>
+</tr>
+<tr>
+<td>Complex workflows, periodic schedules, heavy routing</td>
+<td>Celery (or another mature queue)</td>
+</tr>
+<tr>
+<td>A tiny site with one nightly job</td>
+<td>a management command run by cron (Level 4 · 05)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-project-a-rest-api-for-the-task-board"><a href="../level-3/10-project-rest-api/">10 · Project — A REST API for the Task Board</a><a class="headerlink" href="#10-project-a-rest-api-for-the-task-board" title="Permanent link">&para;</a></h3>
+<p><em>API design</em></p>
+<table>
+<thead>
+<tr>
+<th>Method &amp; path</th>
+<th>Who</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /api/boards/</code></td>
+<td>any member</td>
+<td>my boards, with my role and open-task count</td>
+</tr>
+<tr>
+<td><code>POST /api/boards/</code></td>
+<td>any user</td>
+<td>create a board; creator becomes owner</td>
+</tr>
+<tr>
+<td><code>GET /api/boards/{id}/</code></td>
+<td>members</td>
+<td>board with member list</td>
+</tr>
+<tr>
+<td><code>PATCH/DELETE /api/boards/{id}/</code></td>
+<td>owner</td>
+<td>rename / delete</td>
+</tr>
+<tr>
+<td><code>GET /api/boards/{id}/tasks/?status=</code></td>
+<td>members</td>
+<td>tasks, paginated</td>
+</tr>
+<tr>
+<td><code>POST /api/boards/{id}/tasks/</code></td>
+<td>editors, owner</td>
+<td>create task</td>
+</tr>
+<tr>
+<td><code>GET/PATCH/DELETE /api/boards/{id}/tasks/{tid}/</code></td>
+<td>members read; editors+ write</td>
+<td>task detail</td>
+</tr>
+<tr>
+<td><code>POST /api/boards/{id}/tasks/{tid}/move/</code></td>
+<td>editors, owner</td>
+<td>change status</td>
+</tr>
+</tbody>
+</table>
+<h2 id="level-4-master">Level 4 · Master<a class="headerlink" href="#level-4-master" title="Permanent link">&para;</a></h2>
+<h3 id="02-production-settings-configuration"><a href="../level-4/02-production-settings/">02 · Production Settings &amp; Configuration</a><a class="headerlink" href="#02-production-settings-configuration" title="Permanent link">&para;</a></h3>
+<p><em>What must differ between environments</em></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Development</th>
+<th>Production</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DEBUG</code></td>
+<td><code>True</code></td>
+<td><code>False</code>, always</td>
+</tr>
+<tr>
+<td><code>SECRET_KEY</code></td>
+<td>anything</td>
+<td>long, random, secret, unique per environment</td>
+</tr>
+<tr>
+<td><code>ALLOWED_HOSTS</code></td>
+<td><code>localhost</code></td>
+<td>your real domain(s)</td>
+</tr>
+<tr>
+<td><code>DATABASES</code></td>
+<td>SQLite or local PostgreSQL</td>
+<td>managed PostgreSQL with credentials</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>console backend</td>
+<td>SMTP or a provider's API</td>
+</tr>
+<tr>
+<td>HTTPS settings</td>
+<td>off</td>
+<td>on</td>
+</tr>
+<tr>
+<td>Static files storage</td>
+<td>default</td>
+<td>hashed and compressed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="07-logging-error-reporting-health-checks"><a href="../level-4/07-logging-errors/">07 · Logging, Error Reporting &amp; Health Checks</a><a class="headerlink" href="#07-logging-error-reporting-health-checks" title="Permanent link">&para;</a></h3>
+<p><em>What Django logs by itself</em></p>
+<table>
+<thead>
+<tr>
+<th>Logger</th>
+<th>Logs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>django.request</code></td>
+<td><code>WARNING</code> for 4xx responses, <code>ERROR</code> (with traceback) for 5xx</td>
+</tr>
+<tr>
+<td><code>django.server</code></td>
+<td><code>runserver</code> request lines</td>
+</tr>
+<tr>
+<td><code>django.security.*</code></td>
+<td><code>DisallowedHost</code>, CSRF failures, suspicious operations</td>
+</tr>
+<tr>
+<td><code>django.db.backends</code></td>
+<td>every SQL query at <code>DEBUG</code> level, <strong>only when <code>settings.DEBUG</code> is True</strong></td>
+</tr>
+<tr>
+<td><code>django.template</code></td>
+<td>missing-variable details at <code>DEBUG</code> level</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-capstone-a-production-ready-book-club-app"><a href="../level-4/10-capstone/">10 · Capstone — A Production-Ready Book Club App</a><a class="headerlink" href="#10-capstone-a-production-ready-book-club-app" title="Permanent link">&para;</a></h3>
+<p><em>Tests</em></p>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Proves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>test_outsider_gets_404</code></td>
+<td>non-members can't see clubs or meetings</td>
+</tr>
+<tr>
+<td><code>test_only_host_schedules</code></td>
+<td>member 403, host 200 on the schedule page</td>
+</tr>
+<tr>
+<td><code>test_rsvp_is_created_then_updated_not_duplicated</code></td>
+<td>answering twice updates one row</td>
+</tr>
+<tr>
+<td><code>test_rsvp_requires_post</code></td>
+<td>GET → 405</td>
+</tr>
+<tr>
+<td><code>test_cannot_rsvp_to_past_meeting</code></td>
+<td>past meetings → 404</td>
+</tr>
+<tr>
+<td><code>test_meeting_time_shown_in_each_users_zone</code></td>
+<td>same instant, each user's local clock time on the page</td>
+</tr>
+<tr>
+<td><code>test_reminder_skips_members_who_declined_and_is_idempotent</code></td>
+<td>one email, to the right person; second run sends none</td>
+</tr>
+<tr>
+<td><code>test_command_dry_run_and_real_run</code></td>
+<td>dry run sends nothing; real run (with <code>captureOnCommitCallbacks</code>) emails both members and sets <code>reminder_sent_at</code></td>
+</tr>
+<tr>
+<td><code>test_club_page_query_count_does_not_grow_with_meetings</code></td>
+<td>6 queries with 21 meetings</td>
+</tr>
+<tr>
+<td><code>test_health_endpoints</code></td>
+<td><code>/healthz</code> and <code>/readyz</code> return ok</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Go deeper with the full <a href="../">Django Mastery Path</a> curriculum or test yourself with the <a href="../interview-questions/">interview questions</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/react-mastery-path/">React</a></li><li><a href="https://learnmasterypath.com/nextjs-mastery-path/">Next.js</a></li><li><a href="https://learnmasterypath.com/angular-mastery-path/">Angular</a></li><li><a href="https://learnmasterypath.com/vue-mastery-path/">Vue.js</a></li><li><a href="https://learnmasterypath.com/html-css-mastery-path/">HTML & CSS</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../interview-questions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Interview Questions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Interview Questions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../level-1/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/django-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/django-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
