@@ -1,6 +1,6 @@
 ---
 title: "Free Django Course: Models, ORM, Auth, Django REST Framework, Testing & Deployment"
-description: "Free Django course: 35 lessons and 5 projects on the ORM, templates, forms, auth, Django REST Framework, testing, caching, async, security and deployment."
+description: "Free Django course: 35 lessons, 4 projects and 1 capstone on the ORM, templates, forms, auth, Django REST Framework, testing, caching, async, security and deployment."
 ---
 
 # Django Mastery Path
